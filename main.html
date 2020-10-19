@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+    <link rel="stylesheet" href="style.css">
+
+    <head>
+
+        <title>
+            BLACK PINK in YOUR AREA
+        </title>
+
+    </head>
+    
+    <body data-mode="day">
+
+        <span
+        id="title-box">
+            BLACK 
+            <span 
+            class="span-pink">
+            PINK
+            </span>
+        </span>
+
+        <input
+        type="button"
+        value="night"
+        onclick="
+            if(document.querySelector('body').dataset.mode==='day')
+            {
+                document
+                .querySelector('body')
+                .style
+                .backgroundColor='black';
+
+                document
+                .querySelector('body')
+                .style
+                .color='white';
+
+                document
+                .querySelector('body')
+                .dataset
+                .mode='night';
+                
+                this
+                .value='day';
+            }
+                
+            else {
+                document
+                .querySelector('body')
+                .style
+                .backgroundColor='white';
+
+                document
+                .querySelector('body')
+                .style
+                .color='black';
+
+                document
+                .querySelector('body')
+                .dataset
+                .mode='day';
+                
+                this
+                .value='night';
+
+            }
+        ">
+               
+        <div id="grid">
+           
+            <ul>
+
+                <h3>
+                    MEMBERS
+                </h3>
+                    
+                <li>
+                    <a 
+                    href="https://www.instagram.com/sooyaaa__/">
+                    JISOO
+                    </a>
+                </li>
+
+                <li>
+                    <a 
+                    href="https://www.instagram.com/jennierubyjane/">
+                    JENNIE
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                    href="https://www.instagram.com/roses_are_rosie/">
+                    ROSE
+                    </a>
+                </li>
+
+                <li>
+                    <a 
+                    href="https://www.instagram.com/lalalalisa_m/">
+                    LISA
+                    </a>
+                </li>
+
+            </ul>    
+            
+            <div id="introducing">
+
+                <h2>
+                    INTRODUCING
+                </h2>
+
+                <p>
+                    블랙핑크는 2016년 ‘SQUARE ONE’으로 데뷔하자마자 대중을 사로잡으며 대형 신인 그룹의 탄생을 알렸다.
+                    이후 미니앨범 ‘SQUARE UP’과 ‘Kill This Love’를 발표하며 글로벌 아티스트로 성장해 성공적인 월드투어를 통해 
+                    세계적인 인기를 확인, 또 미국 최대 음악 페스티벌 ‘코첼라' 무대에 서면서 그 위력을 증명했다. 
+                    올해 중순, 카리스마 넘치는 ‘How You Like That’과 반전 매력의 ‘Ice Cream’으로 돌아와 빌보드 핫 100 차트 
+                    13위를 달성하는 등 전 세계적인 영향력을 입증한 블랙핑크는 오는 10월 2일 데뷔 첫 정규앨범을 발매하며 
+                    다시 한 번 새로운 도전에 나선다.
+                </p>
+
+            </div>
+
+        </div>
+
+        <input
+        type="button"
+        value="night"
+        onclick="
+            var target=document.querySelector('body');
+
+            if(this.value ==='night')
+            {
+                target
+                .style
+                .backgroundColor='black';
+
+                target
+                .style
+                .color='white';
+              
+                this
+                .value='day';
+            }
+                
+            else {
+                target
+                .style
+                .backgroundColor='white';
+
+                target
+                .style
+                .color='black';
+                
+                this
+                .value='night';
+
+            }
+        ">
+
+    </body>
+    
+</html>
